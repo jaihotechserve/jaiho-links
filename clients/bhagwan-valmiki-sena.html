@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official digital links for Bhagwan Valmiki Sena. Connect with our community, stay updated on events, and support our social welfare initiatives.">
+    <title>Bhagwan Valmiki Sena | Jaiho Links</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        body {
+            background: var(--bg-light-gradient);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        .link-container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem 2rem;
+            flex: 1;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .profile-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .profile-avatar-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        .profile-avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 4px solid #ffffff;
+            box-shadow: var(--shadow-lg);
+            background-color: var(--bg-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+
+        /* Community Branding Icon */
+        .profile-icon {
+            font-size: 3rem;
+            color: #ea580c; /* Deep Saffron/Orange tone for community/spirituality */
+        }
+
+        .profile-title {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .profile-bio {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            max-width: 500px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 1.1rem 1.5rem;
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            color: var(--text-main);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: all var(--transition-normal);
+            box-shadow: var(--shadow-sm);
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: #ea580c;
+            color: #c2410c;
+        }
+
+        /* Custom Priority Button for this profile */
+        .link-btn.priority {
+            background: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+            color: #ffffff;
+            border: none;
+        }
+
+        .link-btn.priority:hover {
+            background: linear-gradient(135deg, #c2410c 0%, #ea580c 100%);
+            color: #ffffff;
+            box-shadow: 0 0 15px rgba(234, 88, 12, 0.4);
+        }
+
+        .link-btn.priority .link-icon {
+            color: #ffffff;
+        }
+
+        .link-icon {
+            font-size: 1.4rem;
+            width: 35px;
+            text-align: center;
+            color: #ea580c;
+            transition: all var(--transition-normal);
+        }
+
+        .link-text {
+            flex-grow: 1;
+            text-align: center;
+            padding-right: 35px;
+        }
+
+        .share-btn {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-main);
+            box-shadow: var(--shadow-sm);
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            z-index: 10;
+        }
+
+        .share-btn:hover {
+            background: var(--bg-surface-alt);
+            color: #ea580c;
+            transform: scale(1.05);
+        }
+
+        .jaiho-watermark {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .watermark-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+
+        .watermark-link:hover {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="w-100 text-center py-2 shadow-sm" style="background: var(--brand-gradient); z-index: 100; position: relative;">
+        <a href="../index.html" class="text-white text-decoration-none fw-bold small d-block px-3">
+            <i class="fas fa-rocket me-1"></i> Want a profile like this? Get your Jaiho Link today! <i class="fas fa-arrow-right ms-1"></i>
+        </a>
+    </div>
+
+    <div class="blob blob-1" style="top: -10%; right: -20%; opacity: 0.2; width: 400px; height: 400px; position: fixed; background: radial-gradient(circle, #fdba74 0%, transparent 70%);"></div>
+
+    <div class="share-btn" onclick="navigator.share({title: 'Bhagwan Valmiki Sena | Jaiho Links', url: window.location.href})" aria-label="Share this profile">
+        <i class="fas fa-share-nodes"></i>
+    </div>
+
+    <main class="link-container">
+        
+        <header class="profile-header">
+            <div class="profile-avatar-wrapper">
+                <div class="profile-avatar">
+                    <i class="fas fa-hands-holding-circle profile-icon"></i>
+                </div>
+            </div>
+            <h1 class="profile-title">Bhagwan Valmiki Sena</h1>
+            <p class="profile-bio">A dedicated community organization focused on social welfare, empowerment, and cultural preservation. Join our mission to serve the people.</p>
+        </header>
+
+        <nav class="links-wrapper">
+            
+            <!---<a href="#" class="link-btn priority" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp link-icon"></i>
+                <span class="link-text">Join Our WhatsApp Community</span>
+            </a>--->
+
+            <a href="https://bhagwan-valmiki-sena.vercel.app/" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-globe-asia link-icon"></i>
+                <span class="link-text">Visit our Website</span>
+            </a>
+
+            <a href="#" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook link-icon"></i>
+                <span class="link-text">Follow our Activities on Facebook</span>
+            </a>
+
+            <a href="https://www.instagram.com/bhagwanvalmikisena.punjab" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-instagram link-icon"></i>
+                <span class="link-text">Follow us on Instagram</span>
+            </a>
+
+            <a href="https://www.youtube.com/@BhagwanValmikiSena" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-youtube link-icon"></i>
+                <span class="link-text">Subscribe to our YouTube Channel</span>
+            </a>
+
+            <a href="https://x.com/valmikisenapb" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-twitter link-icon"></i>
+                <span class="link-text">Follow us on X (Twitter)</span>
+            </a>
+
+            <!--<a href="#" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-calendar-check link-icon"></i>
+                <span class="link-text">Upcoming Events & Gatherings</span>
+            </a>
+
+            <a href="#" class="link-btn" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-hand-holding-heart link-icon"></i>
+                <span class="link-text">Support Our Social Causes</span>
+            </a>--->
+
+        </nav>
+    </main>
+
+    <footer class="jaiho-watermark">
+        <a href="../index.html" class="watermark-link">
+            Powered by 
+            <i class="fas fa-link watermark-icon brand-gradient" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i> 
+            Jaiho Links
+        </a>
+    </footer>
+
+</body>
+</html>
